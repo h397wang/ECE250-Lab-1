@@ -114,7 +114,7 @@ int main(){
 	}
 	
 	// prints out values starting at head
-	d2->print();
+	//d2->print();
 	
 	cout << "Capactiy should be " << size*2 << " : " << d2->capacity() << endl;	
 	cout << "The size should be " << 2*size -1 << " : " << d2->size() << endl;
