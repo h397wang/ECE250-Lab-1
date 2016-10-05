@@ -222,8 +222,11 @@ int Dynamic_deque_as_array::dequeue_tail() {
 
 // Remove all elements from the deque in O(1).
 void Dynamic_deque_as_array::clear() {
-	delete [] array;
-	array = new int[theCapacity];
+	//don't need to delete! its costly to deallocate and reallocate memory
+	// if we just reset everything all your function should work as normal? Just overwrite the data. 
+	//don't quote me but its better not to think of allocate as O(1)
+	//delete [] array;
+	//array = new int[theCapacity];
 	headIndex = 0;
 	tailIndex = 0;
 	count = 0;
